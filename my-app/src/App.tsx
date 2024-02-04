@@ -6,6 +6,8 @@ import { Greet } from "./components/Greet";
 import { Status } from "./components/Status";
 import { Heading } from "./components/Heading";
 import { Kuba } from "./components/Kuba";
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
 
 function App() {
   const person = useMemo(
@@ -32,6 +34,13 @@ function App() {
       <Person person={person} />
       <PersonList personList={personList} />
       <Status status="loading" />
+      <Button
+        handlClick={(event, id) => console.log("Button Clicked", event, id)}
+      />
+      <Input
+        value=""
+        handleChange={(event) => console.log("event", event.target)}
+      />
     </div>
   );
 }

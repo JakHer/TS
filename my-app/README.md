@@ -27,6 +27,13 @@ status type - from given strings
 children type
 optional props
 
+## Lesson 6
+
+event props
+button
+input
+
+
 
 
 

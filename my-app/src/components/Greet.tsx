@@ -17,7 +17,7 @@ export const Greet = (props: GreetProps) => {
       default:
         return "Hello Guest! You are not logged in";
     }
-  }, [props.isLoggedIn]);
+  }, [props.isLoggedIn, messagesCount, props.name]);
 
   return (
     <div>

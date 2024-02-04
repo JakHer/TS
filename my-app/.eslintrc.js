@@ -28,12 +28,15 @@ module.exports = {
     },
     "plugins": [
         "@typescript-eslint",
-        "react"
+        "react",
+        "react-hooks"
     ],
     "rules": {
         "react/react-in-jsx-scope": 0,
         "max-len": ["error", {
             code: 100
-        }]
+        }],
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
     }
 }

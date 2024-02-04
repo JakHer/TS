@@ -15,7 +15,7 @@ export const PersonList = ({ personList }: PersonListProps) => {
           {firstName} {lastName}
         </li>
       )),
-    []
+    [personList]
   );
   return <ul>{renderPersonList}</ul>;
 };
