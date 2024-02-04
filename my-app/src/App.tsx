@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useMemo } from "react";
+import "./App.css";
+import { Person } from "./components/Person";
+import { PersonList } from "./components/PersonList";
+import { Greet } from "./components/Greet";
 
 function App() {
+  const person = useMemo(
+    () => ({ firstName: "Jakub", lastName: "Hermyt" }),
+    []
+  );
+  const personList = useMemo(
+    () => [
+      { firstName: "Jakub", lastName: "Hermyt" },
+      { firstName: "Adam", lastName: "Hermyt" },
+      { firstName: "Czerwona", lastName: "Latarnia" },
+    ],
+    []
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greet name="Jakub" messagesCount={10} isLoggedIn={true} />
+      <Person person={person} />
+      <PersonList personList={personList} />
     </div>
   );
 }
