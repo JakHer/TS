@@ -8,6 +8,7 @@ import { Heading } from "./components/Heading";
 import { Kuba } from "./components/Kuba";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
+import { Container } from "./components/Container";
 
 function App() {
   const person = useMemo(
@@ -41,6 +42,7 @@ function App() {
         value=""
         handleChange={(event) => console.log("event", event.target)}
       />
+      <Container styles={{ background: "red", padding: "16px" }} />
     </div>
   );
 }

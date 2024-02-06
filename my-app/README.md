@@ -29,9 +29,14 @@ optional props
 
 ## Lesson 6
 
-event props
-button
-input
+event props 
+button  React.MouseEvent<HTMLButtonElement>
+input   React.ChangeEvent<HTMLInputElement>
+
+## Lesson 7
+
+style props React.CSSProperties
+
 
 
 
