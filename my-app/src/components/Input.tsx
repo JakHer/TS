@@ -5,10 +5,10 @@ type InputProps = {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const Input = (props: InputProps) => {
+export const Input = ({ value }: InputProps) => {
   const handleInputChage = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => console.log("event", event),
     []
   );
-  return <input value={props.value} onChange={handleInputChage} />;
+  return <input value={value} onChange={handleInputChage} />;
 };

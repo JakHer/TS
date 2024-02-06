@@ -1,11 +1,5 @@
 import { useMemo } from "react";
-
-type PersonListProps = {
-  personList: {
-    firstName: string;
-    lastName: string;
-  }[];
-};
+import { PersonListProps } from "./Person.types";
 
 export const PersonList = ({ personList }: PersonListProps) => {
   const renderPersonList = useMemo(

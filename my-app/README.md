@@ -37,9 +37,10 @@ input   React.ChangeEvent<HTMLInputElement>
 
 style props React.CSSProperties
 
+## Lesson 8
 
-
-
+tips: destructuring props
+external types.ts files
 
 
 ### `npm start`
