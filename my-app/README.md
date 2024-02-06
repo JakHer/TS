@@ -42,6 +42,9 @@ style props React.CSSProperties
 tips: destructuring props
 external types.ts files
 
+## Lesson 9 & 10 & 11
+
+use state type assertion < ExampleType | null > | < ExampleType > ({} as ExampleType)
 
 ### `npm start`
 

@@ -9,6 +9,8 @@ import { Kuba } from "./components/Kuba";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { Container } from "./components/Container";
+import { LoggedIn } from "./components/state/LoggedIn";
+import { User } from "./components/state/User";
 
 function App() {
   const person = useMemo(
@@ -43,6 +45,9 @@ function App() {
         handleChange={(event) => console.log("event", event.target)}
       />
       <Container styles={{ background: "red", padding: "16px" }} />
+      <LoggedIn />
+
+      <User />
     </div>
   );
 }
