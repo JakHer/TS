@@ -46,6 +46,11 @@ external types.ts files
 
 use state type assertion < ExampleType | null > | < ExampleType > ({} as ExampleType)
 
+## Lesson 12
+
+use reducer typing
+discriminated unions
+
 ### `npm start`
 
 Runs the app in the development mode.\
