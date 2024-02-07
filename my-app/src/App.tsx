@@ -13,6 +13,7 @@ import { LoggedIn } from "./components/state/LoggedIn";
 import { User } from "./components/state/User";
 import { User as ContextUser } from "./components/context/User";
 import { Counter } from "./components/state/Counter";
+import { Counter as CounterClass } from "./components/class/Counter";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { Box } from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
@@ -66,6 +67,7 @@ function App() {
 
       <DomRef />
       <MutableRef />
+      <CounterClass message="The count value is" />
     </div>
   );
 }

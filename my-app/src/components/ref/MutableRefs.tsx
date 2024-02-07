@@ -8,10 +8,6 @@ export const MutableRef = () => {
     intervalRef.current && window.clearInterval(intervalRef.current);
   }, []);
 
-  const resumeTimer = useCallback(() => {
-    intervalRef.current && window.clearInterval(intervalRef.current);
-  }, []);
-
   useEffect(() => {
     intervalRef.current = window.setInterval(() => {
       setTimer((timer) => timer + 1);
