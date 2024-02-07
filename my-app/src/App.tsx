@@ -19,6 +19,8 @@ import { Box } from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
 import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRefs";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 
 function App() {
   const person = useMemo(
@@ -68,6 +70,8 @@ function App() {
       <DomRef />
       <MutableRef />
       <CounterClass message="The count value is" />
+
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }

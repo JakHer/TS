@@ -63,6 +63,10 @@ Use Ref hook
 
 class components
 
+## Lesson 18
+
+Component: React.ComponentType;
+
 ### `npm start`
 
 Runs the app in the development mode.\
