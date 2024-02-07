@@ -51,6 +51,10 @@ use state type assertion < ExampleType | null > | < ExampleType > ({} as Example
 use reducer typing
 discriminated unions
 
+## Lesson 14 & 15
+
+theme context types
+
 ### `npm start`
 
 Runs the app in the development mode.\
