@@ -71,6 +71,11 @@ Component: React.ComponentType;
 
 Generic Types
 
+## Lesson 20
+
+Restricting Props
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
