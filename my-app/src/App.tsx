@@ -23,6 +23,7 @@ import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
+import { Toast } from "./components/templateLiterals/Toast";
 
 function App() {
   const person = useMemo(
@@ -101,6 +102,7 @@ function App() {
       />
 
       <RandomNumber value={10} isNegative />
+      <Toast position="center" />
     </div>
   );
 }
