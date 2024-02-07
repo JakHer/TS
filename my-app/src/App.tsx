@@ -16,6 +16,8 @@ import { Counter } from "./components/state/Counter";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { Box } from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
+import { DomRef } from "./components/ref/DomRef";
+import { MutableRef } from "./components/ref/MutableRefs";
 
 function App() {
   const person = useMemo(
@@ -61,6 +63,9 @@ function App() {
       <UserContextProvider>
         <ContextUser />
       </UserContextProvider>
+
+      <DomRef />
+      <MutableRef />
     </div>
   );
 }
