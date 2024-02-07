@@ -79,6 +79,12 @@ Restricting Props
 
 Template Literals and Exclude
 
+## Lesson 22
+
+Wrapping HTML Elements
+Omit 
+
+
 
 ### `npm start`
 

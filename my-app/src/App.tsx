@@ -24,6 +24,8 @@ import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
+import { CustomButton } from "./components/html/Button";
+import { CustomInput } from "./components/html/Input";
 
 function App() {
   const person = useMemo(
@@ -103,6 +105,9 @@ function App() {
 
       <RandomNumber value={10} isNegative />
       <Toast position="center" />
+
+      <CustomButton variant="primary">Primary Button</CustomButton>
+      <CustomInput value="test" />
     </div>
   );
 }
