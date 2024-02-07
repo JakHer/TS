@@ -67,6 +67,10 @@ class components
 
 Component: React.ComponentType;
 
+## Lesson 19
+
+Generic Types
+
 ### `npm start`
 
 Runs the app in the development mode.\

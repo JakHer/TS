@@ -21,6 +21,7 @@ import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRefs";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
+import { List } from "./components/generics/List";
 
 function App() {
   const person = useMemo(
@@ -72,6 +73,31 @@ function App() {
       <CounterClass message="The count value is" />
 
       <Private isLoggedIn={true} component={Profile} />
+      {/* <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
+      <List
+        items={["test", "test2", "test3"]}
+        onClick={(item) => console.log(item)}
+      /> */}
+      <List
+        items={[
+          {
+            id: 1,
+            name: "name",
+            surname: "surname",
+          },
+          {
+            id: 2,
+            name: "name",
+            surname: "surname",
+          },
+          {
+            id: 3,
+            name: "name",
+            surname: "surname",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
