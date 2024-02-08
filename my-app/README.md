@@ -84,12 +84,15 @@ Template Literals and Exclude
 Wrapping HTML Elements
 Omit 
 
-## Lesson 23
+## Lesson 23 & 24
 
-Wrapping HTML Elements
+Extracting component types to another 
+props: React.ComponentProps<typeof Greet>
 Omit 
 
+## Lesson 25
 
+ Polymorphic Components
 
 ### `npm start`
 

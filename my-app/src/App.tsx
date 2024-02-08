@@ -26,6 +26,7 @@ import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
 import { CustomButton } from "./components/html/Button";
 import { CustomInput } from "./components/html/Input";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   const person = useMemo(
@@ -108,6 +109,15 @@ function App() {
 
       <CustomButton variant="primary">Primary Button</CustomButton>
       <CustomInput value="test" />
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="id" size="sm" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
