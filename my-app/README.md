@@ -94,6 +94,9 @@ Omit
 
  Polymorphic Components
 
+
+ Component as props
+
 ### `npm start`
 
 Runs the app in the development mode.\
