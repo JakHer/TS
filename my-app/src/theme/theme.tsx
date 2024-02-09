@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import React, { useState } from "react";
 
 export const Themes = () => {
   const [selectedTheme, setSelectedTheme] = useState("light");
@@ -25,22 +25,25 @@ type ThemeOptionsProps<T> = {
   setSelectedTheme: React.Dispatch<React.SetStateAction<T>>;
 };
 
-const ThemeOptions = <T extends ReactNode>({
+const ThemeOptions = <T extends React.ReactNode>({
   themeOptions,
   selectedTheme,
   setSelectedTheme,
-}: ThemeOptionsProps<T>) =>
-  themeOptions.map((theme, index) => (
-    <ul>
-      <li key={index}>
-        <button
-          style={{
-            fontWeight: selectedTheme === theme ? "bold" : "normalss",
-          }}
-          onClick={() => setSelectedTheme(theme)}
-        >
-          {theme}
-        </button>
-      </li>
-    </ul>
-  ));
+}: ThemeOptionsProps<T>) => (
+  <ul>
+    {themeOptions.map((theme, index) => (
+      <ul>
+        <li key={index}>
+          <button
+            style={{
+              fontWeight: selectedTheme === theme ? "bold" : "normalss",
+            }}
+            onClick={() => setSelectedTheme(theme)}
+          >
+            {theme}
+          </button>
+        </li>
+      </ul>
+    ))}
+  </ul>
+);
