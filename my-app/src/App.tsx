@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  arr,
+  convertToArray,
+  createArrayPair,
+  getIndexOfArrayItem,
+} from "./ts/helpers";
+import { Themes } from "./theme/theme";
 
 function App() {
+  console.log(convertToArray(1));
+
+  console.log(getIndexOfArrayItem(arr, 77));
+  console.log(createArrayPair("hello", 10));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Themes />
     </div>
   );
 }
